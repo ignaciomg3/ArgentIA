@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>ArgentIA — Technology Infrastructure Consulting</title>
+		<meta name="description" content="Simple, robust technology infrastructure consulting: cloud, networks, security, and operations." />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="estilo.css" />
+	</head>
+	<body>
+		<header class="site-header" id="top">
+			<div class="container header-inner">
+				<a class="brand" href="#top" aria-label="ArgentIA home">
+					<img src="img/logo%20de%20argentIA.png" alt="ArgentIA logo" class="brand-logo" />
+					<span class="brand-name">ArgentIA</span>
+				</a>
+				<nav class="site-nav" aria-label="Primary">
+					<button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+					<ul id="primary-menu" class="nav-list">
+						<li><a href="#services">Services</a></li>
+						<li><a href="#approach">Approach</a></li>
+						<li><a href="#clients">Clients</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container hero-inner">
+					<h1>Simple, robust infrastructure consulting</h1>
+					<p class="hero-subtitle">Cloud architecture, networks & security, DevOps & operations — delivered with reliability and clarity.</p>
+					<div class="hero-cta">
+						<a href="#contact" class="btn btn-primary">Request a consultation</a>
+						<a href="#services" class="btn btn-secondary">See our services</a>
+					</div>
+				</div>
+			</section>
+
+			<section id="services" class="section">
+				<div class="container">
+					<h2 class="section-title">Services</h2>
+					<div class="cards">
+						<article class="card">
+							<h3>Cloud Architecture</h3>
+							<p>Design, migration, and optimization for AWS, Azure, and GCP with secure, cost‑efficient foundations.</p>
+						</article>
+						<article class="card">
+							<h3>Network & Security</h3>
+							<p>Resilient networking, zero‑trust access, firewalls, observability, and compliance‑ready controls.</p>
+						</article>
+						<article class="card">
+							<h3>DevOps & SRE</h3>
+							<p>CI/CD pipelines, infrastructure as code, reliability engineering, and operational excellence.</p>
+						</article>
+						<article class="card">
+							<h3>Cost Optimization</h3>
+							<p>Governance, rightsizing, and FinOps practices to reduce spend without compromising performance.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="approach" class="section section-alt">
+				<div class="container">
+					<h2 class="section-title">Approach</h2>
+					<div class="steps">
+						<div class="step">
+							<span class="step-index">01</span>
+							<h3>Assess</h3>
+							<p>We map your current state and objectives, identifying risks and opportunities.</p>
+						</div>
+						<div class="step">
+							<span class="step-index">02</span>
+							<h3>Design</h3>
+							<p>We propose a clear target architecture with principles, patterns, and guardrails.</p>
+						</div>
+						<div class="step">
+							<span class="step-index">03</span>
+							<h3>Implement</h3>
+							<p>We deliver infrastructure as code with secure defaults and reliable automation.</p>
+						</div>
+						<div class="step">
+							<span class="step-index">04</span>
+							<h3>Operate</h3>
+							<p>We establish monitoring, incident response, and continuous improvement rhythms.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="clients" class="section">
+				<div class="container">
+					<h2 class="section-title">Trusted by teams</h2>
+					<div class="trustbar">
+						<span class="trust-item">Finance</span>
+						<span class="trust-item">Retail</span>
+						<span class="trust-item">Healthcare</span>
+						<span class="trust-item">SaaS</span>
+						<span class="trust-item">Public Sector</span>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="section section-alt">
+				<div class="container contact-inner">
+					<div class="contact-copy">
+						<h2 class="section-title">Contact</h2>
+						<p>Let’s discuss your infrastructure goals. We respond within one business day.</p>
+						<p><a href="mailto:hello@argentia.consulting" class="link-strong">hello@argentia.consulting</a></p>
+					</div>
+					<form class="contact-form" aria-label="Contact form">
+						<div class="form-field">
+							<label for="name">Name</label>
+							<input id="name" name="name" type="text" required />
+						</div>
+						<div class="form-field">
+							<label for="email">Email</label>
+							<input id="email" name="email" type="email" required />
+						</div>
+						<div class="form-field">
+							<label for="message">Message</label>
+							<textarea id="message" name="message" rows="4" required></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Send</button>
+						<p class="form-note">This uses your email client to send via mailto.</p>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-inner">
+				<p>© <span id="year"></span> ArgentIA. All rights reserved.</p>
+				<nav aria-label="Footer">
+					<a href="#services">Services</a>
+					<a href="#approach">Approach</a>
+					<a href="#contact">Contact</a>
+					<a href="#top">Back to top</a>
+				</nav>
+			</div>
+		</footer>
+
+		<script src="app.js"></script>
+	</body>
+</html>
