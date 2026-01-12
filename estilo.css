@@ -74,6 +74,21 @@ h1,h2,h3 { color: var(--text); margin: 0 0 var(--space-4); }
 .brand-name { font-weight: 700; letter-spacing: 0.3px; }
 
 .site-nav { display: flex; align-items: center; gap: var(--space-4); }
+.lang-toggle {
+	padding: 8px 12px;
+	border-radius: 8px;
+	border: 1px solid var(--border);
+	background: var(--surface);
+	color: var(--text);
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+.lang-toggle:hover {
+	border-color: #2f3d50;
+	background: rgba(74,163,255,0.1);
+	color: var(--primary);
+}
 .nav-toggle {
 	display: none;
 	padding: 10px 14px;
