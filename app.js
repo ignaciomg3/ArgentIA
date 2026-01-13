@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		form.appendChild(statusEl);
 
 		// Reemplaza este endpoint con tu ID de Formspree (ej: https://formspree.io/f/xyzzabcd)
-		const FORM_ENDPOINT = "https://formspree.io/f/your-id";
+		const FORM_ENDPOINT = "https://formspree.io/f/xykkydoq";
 
 		form.addEventListener("submit", async (e) => {
 			e.preventDefault();
