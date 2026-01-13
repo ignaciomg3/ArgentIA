@@ -1,114 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" type="image/png" href="img/icono_cerebro.png" />
-		<title>ArgentIA — Technology Infrastructure Consulting	</title>
-		<meta name="description" content="Simple, robust technology infrastructure consulting: cloud, networks, security, and operations." />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="estilo.css" />
-	</head>
-	<body>
-		<header class="site-header" id="top">
-			<div class="container header-inner">
-				<a class="brand" href="#top" aria-label="ArgentIA home">
-					<!-- <img src="img/logo%20de%20argentIA.png" alt="ArgentIA logo" class="brand-logo" /> -->
-					<span class="brand-name">ArgentIA</span>
-				</a>
-				<nav class="site-nav" aria-label="Primary">
-					<button class="lang-toggle" id="lang-btn" aria-label="Change language">EN</button>
-					<button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
-					<ul id="primary-menu" class="nav-list">
-						<li><a href="#services" data-en="Services" data-es="Servicios">Services</a></li>
-						<li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
-					</ul>
-				</nav>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/png" href="img/icono_cerebro.png" />
+	<title>ArgentIA — Technology Infrastructure Consulting </title>
+	<meta name="description"
+		content="Simple, robust technology infrastructure consulting: cloud, networks, security, and operations." />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+	<header class="site-header" id="top">
+		<div class="container header-inner">
+			<a class="brand" href="#top" aria-label="ArgentIA home">
+				<!-- <img src="img/logo%20de%20argentIA.png" alt="ArgentIA logo" class="brand-logo" /> -->
+				<span class="brand-name">ArgentIA</span>
+			</a>
+			<nav class="site-nav" aria-label="Primary">
+				<button class="lang-toggle" id="lang-btn" aria-label="Change language">EN</button>
+				<button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+				<ul id="primary-menu" class="nav-list">
+					<li><a href="#services" data-en="Services" data-es="Servicios">Services</a></li>
+					<li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="container hero-inner">
+				<h1 data-en="Simple, robust infrastructure consulting"
+					data-es="Consultoría de infraestructura simple y robusta">Simple, robust infrastructure consulting
+				</h1>
+				<p class="hero-subtitle"
+					data-en="Cloud architecture, networks & security, DevOps & operations — delivered with reliability and clarity."
+					data-es="Arquitectura en la nube, redes y seguridad, DevOps y operaciones — entregados con confiabilidad y claridad.">
+					Cloud architecture, networks & security, DevOps & operations — delivered with reliability and
+					clarity.</p>
+				<div class="hero-cta">
+					<a href="#contact" class="btn btn-primary" data-en="Request a consultation"
+						data-es="Solicitar consulta">Request a consultation</a>
+					<a href="#services" class="btn btn-secondary" data-en="See our services"
+						data-es="Ver nuestros servicios">See our services</a>
+				</div>
 			</div>
-		</header>
+		</section>
 
-		<main>
-			<section class="hero">
-				<div class="container hero-inner">
-					<h1 data-en="Simple, robust infrastructure consulting" data-es="Consultoría de infraestructura simple y robusta">Simple, robust infrastructure consulting</h1>
-					<p class="hero-subtitle" data-en="Cloud architecture, networks & security, DevOps & operations — delivered with reliability and clarity." data-es="Arquitectura en la nube, redes y seguridad, DevOps y operaciones — entregados con confiabilidad y claridad.">Cloud architecture, networks & security, DevOps & operations — delivered with reliability and clarity.</p>
-					<div class="hero-cta">
-						<a href="#contact" class="btn btn-primary" data-en="Request a consultation" data-es="Solicitar consulta">Request a consultation</a>
-						<a href="#services" class="btn btn-secondary" data-en="See our services" data-es="Ver nuestros servicios">See our services</a>
-					</div>
+		<section id="services" class="section">
+			<div class="container">
+				<h2 class="section-title" data-en="Services" data-es="Servicios">Services</h2>
+				<div class="cards">
+					<article class="card">
+						<h3 data-en="Information Systems Development" data-es="Construcción de Sistemas de información">
+							Information Systems Development</h3>
+						<p data-en="We design and build tailored information systems that align technology with your business processes."
+							data-es="Diseñamos y construimos sistemas de información a medida que alinean la tecnología con tus procesos de negocio.">
+							We design and build tailored information systems that align technology with your business
+							processes.</p>
+					</article>
+					<article class="card">
+						<h3 data-en="Automations: n8n Workflows" data-es="Automatizaciones: Flujos con n8n">Automations:
+							n8n Workflows</h3>
+						<p data-en="We automate repetitive tasks with n8n, integrating your tools through reliable, maintainable workflows."
+							data-es="Automatizamos tareas repetitivas con n8n, integrando tus herramientas mediante flujos confiables y mantenibles.">
+							We automate repetitive tasks with n8n, integrating your tools through reliable, maintainable
+							workflows.</p>
+					</article>
+					<article class="card">
+						<h3 data-en="AI Chatbots" data-es="Chatbots con IA">AI Chatbots</h3>
+						<p data-en="We build AI-powered chatbots to improve support, capture leads, and provide instant answers across channels."
+							data-es="Construimos chatbots con IA para mejorar soporte, captar leads y ofrecer respuestas inmediatas en múltiples canales.">
+							We build AI-powered chatbots to improve support, capture leads, and provide instant answers
+							across channels.</p>
+					</article>
 				</div>
-			</section>
-
-			<section id="services" class="section">
-				<div class="container">
-					<h2 class="section-title" data-en="Services" data-es="Servicios">Services</h2>
-					<div class="cards">
-						<article class="card">
-							<h3 data-en="Information Systems Development" data-es="Construcción de Sistemas de información">Information Systems Development</h3>
-							<p data-en="We design and build tailored information systems that align technology with your business processes." data-es="Diseñamos y construimos sistemas de información a medida que alinean la tecnología con tus procesos de negocio.">We design and build tailored information systems that align technology with your business processes.</p>
-						</article>
-						<article class="card">
-							<h3 data-en="Automations: n8n Workflows" data-es="Automatizaciones: Flujos con n8n">Automations: n8n Workflows</h3>
-							<p data-en="We automate repetitive tasks with n8n, integrating your tools through reliable, maintainable workflows." data-es="Automatizamos tareas repetitivas con n8n, integrando tus herramientas mediante flujos confiables y mantenibles.">We automate repetitive tasks with n8n, integrating your tools through reliable, maintainable workflows.</p>
-						</article>
-						<article class="card">
-							<h3 data-en="AI Chatbots" data-es="Chatbots con IA">AI Chatbots</h3>
-							<p data-en="We build AI-powered chatbots to improve support, capture leads, and provide instant answers across channels." data-es="Construimos chatbots con IA para mejorar soporte, captar leads y ofrecer respuestas inmediatas en múltiples canales.">We build AI-powered chatbots to improve support, capture leads, and provide instant answers across channels.</p>
-						</article>
-					</div>
-				</div>
-			</section>
-
-			
-
-			
-
-			<section id="contact" class="section section-alt">
-				<div class="container contact-inner">
-					<div class="contact-copy">
-						<h2 class="section-title" data-en="Contact" data-es="Contacto">Contact</h2>
-						<p data-en="Let's discuss your infrastructure goals. We respond within one business day. " data-es="Contanos que necesitas, podés hablarnos por mail. ">Let's discuss your infrastructure goals. We respond within one business day.</p>
-						
-						<img src="img/icono_correo.png" alt="Correo" class="contact-icon" style="width: 20px; height: 20px;" />
-						<p><a href="argentsoluciones@outlook.com" class="link-strong">argentsoluciones@outlook.com</a></p>
-						
-						<p data-en="or Whatsapp.. " data-es="o por Whatsapp.. ">or Whatsapp.</p>
-						<img src="img/icono_whatsapp.png" alt="Whatsapp" class="contact-icon" style="width: 20px; height: 20px;" />
-						<p> <a href="https://wa.me/543517872475" class="link-strong" target="_blank" rel="noopener noreferrer">: (+54) 351-7872475</a></p>
-					</div>
-					<form class="contact-form" aria-label="Contact form">
-						<div class="form-field">
-							<label for="name" data-en="Name" data-es="Nombre">Name</label>
-							<input id="name" name="name" type="text" required />
-						</div>
-						<div class="form-field">
-							<label for="email" data-en="Email" data-es="Correo Electrónico">Email</label>
-							<input id="email" name="email" type="email" required />
-						</div>
-						<div class="form-field">
-							<label for="message" data-en="Message" data-es="Mensaje">Message</label>
-							<textarea id="message" name="message" rows="4" required></textarea>
-						</div>
-						<button type="submit" class="btn btn-primary" data-en="Send" data-es="Enviar">Send</button>
-						<p class="form-note" data-en="This uses your email client to send via Formspree." data-es="Esto utiliza tu cliente de correo para enviar por Formspree.">This uses your email client to send via Formspree.</p>
-					</form>
-				</div>
-			</section>
-		</main>
-
-		<footer class="site-footer">
-			<div class="container footer-inner">
-				<p><span data-en="© " data-es="© "></span><span id="year"></span><span data-en=" ArgentIA. All rights reserved." data-es=" ArgentIA. Todos los derechos reservados."> ArgentIA. All rights reserved.</span></p>
-				<nav aria-label="Footer">
-					<a href="#services" data-en="Services" data-es="Servicios">Services</a>
-					<a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
-					<a href="#top" data-en="Back to top" data-es="Volver al inicio">Back to top</a>
-				</nav>
 			</div>
-		</footer>
+		</section>
 
-		<script src="app.js"></script>
-	</body>
+
+
+
+
+		<section id="contact" class="section section-alt">
+			<div class="container contact-inner">
+				<div class="contact-copy">
+					<h2 class="section-title" data-en="Contact" data-es="Contacto">Contact</h2>
+					<p data-en="Tell us what you need, you can contact us by email. "
+						data-es="Contanos que necesitas, podés hablarnos por mail. ">Tell us what you need, you can
+						contact us by email.</p>
+
+					<p class="contact-item">
+						<img src="img/icono_correo.png" alt="Correo" class="contact-icon" />
+						<a href="mailto:argentsoluciones@outlook.com" class="link-strong">
+							argentsoluciones@outlook.com
+						</a>
+					</p>
+
+					<p data-en="or Whatsapp.." data-es="o por Whatsapp..">or Whatsapp.</p>
+
+					<p class="contact-item">
+						<img src="img/icono_whatsapp.png" alt="Whatsapp" class="contact-icon" />
+						<a href="https://wa.me/543517872475" class="link-strong" target="_blank"
+							rel="noopener noreferrer">
+							(+54) 351-7872475
+						</a>
+					</p>
+
+
+				</div>
+				<form class="contact-form" aria-label="Contact form">
+					<div class="form-field">
+						<label for="name" data-en="Name" data-es="Nombre">Name</label>
+						<input id="name" name="name" type="text" required />
+					</div>
+					<div class="form-field">
+						<label for="email" data-en="Email" data-es="Correo Electrónico">Email</label>
+						<input id="email" name="email" type="email" required />
+					</div>
+					<div class="form-field">
+						<label for="message" data-en="Message" data-es="Mensaje">Message</label>
+						<textarea id="message" name="message" rows="4" required></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary" data-en="Send" data-es="Enviar">Send</button>
+
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<p><span data-en="© " data-es="© "></span><span id="year"></span><span
+					data-en=" ArgentIA. All rights reserved." data-es=" ArgentIA. Todos los derechos reservados.">
+					ArgentIA. All rights reserved.</span></p>
+			<nav aria-label="Footer">
+				<a href="#services" data-en="Services" data-es="Servicios">Services</a>
+				<a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+				<a href="#top" data-en="Back to top" data-es="Volver al inicio">Back to top</a>
+			</nav>
+		</div>
+	</footer>
+
+	<script src="app.js"></script>
+</body>
+
 </html>
