@@ -1,7 +1,0 @@
-{
-  "mcpServers": {
-    "MCPMagic": {
-      "url": "http://127.0.0.1:3055/sse"
-    }
-  }
-}

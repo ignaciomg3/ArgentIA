@@ -50,16 +50,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	const form = document.querySelector(".contact-form");
 	if (form) {
-		form.addEventListener("submit", (e) => {
+		const submitBtn = form.querySelector('button[type="submit"]');
+		const statusEl = document.createElement("p");
+		statusEl.className = "form-status";
+		statusEl.style.marginTop = "8px";
+		form.appendChild(statusEl);
+
+		// Reemplaza este endpoint con tu ID de Formspree (ej: https://formspree.io/f/xyzzabcd)
+		const FORM_ENDPOINT = "https://formspree.io/f/your-id";
+
+		form.addEventListener("submit", async (e) => {
 			e.preventDefault();
 			const name = document.getElementById("name").value.trim();
 			const email = document.getElementById("email").value.trim();
 			const message = document.getElementById("message").value.trim();
 			if (!name || !email || !message) return;
-			const to = "argentsoluciones@outlook.com";
-			const subject = encodeURIComponent(`Consultation Request from ${name}`);
-			const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-			window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+
+			const sendingText = currentLang === "en" ? "Sending..." : "Enviando...";
+			const successText = currentLang === "en" ? "Message sent! We'll reply soon." : "Mensaje enviado. Te responderemos pronto.";
+			const errorText = currentLang === "en" ? "Could not send. Please try again." : "No se pudo enviar. Inténtalo de nuevo.";
+
+			statusEl.textContent = sendingText;
+			if (submitBtn) submitBtn.disabled = true;
+
+			try {
+				const res = await fetch(FORM_ENDPOINT, {
+					method: "POST",
+					headers: { "Content-Type": "application/json" },
+					body: JSON.stringify({ name, email, message })
+				});
+
+				if (res.ok) {
+					statusEl.textContent = successText;
+					form.reset();
+				} else {
+					statusEl.textContent = errorText;
+				}
+			} catch (err) {
+				statusEl.textContent = errorText;
+			} finally {
+				if (submitBtn) submitBtn.disabled = false;
+			}
 		});
 	}
 });
