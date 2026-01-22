@@ -48,6 +48,70 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	});
 
+	// Modal de Políticas
+	const modal = document.getElementById("policies-modal");
+	const policiesBtn = document.getElementById("policies-btn");
+	const modalClose = document.getElementById("modal-close");
+	const modalCloseBtnBtn = document.getElementById("modal-close-btn");
+	const modalOverlay = document.getElementById("modal-overlay");
+	const modalAccept = document.getElementById("modal-accept");
+
+	function openModal() {
+		if (modal) {
+			modal.classList.add("open");
+			modal.setAttribute("aria-hidden", "false");
+			document.body.style.overflow = "hidden";
+		}
+	}
+
+	function closeModal() {
+		if (modal) {
+			modal.classList.remove("open");
+			modal.setAttribute("aria-hidden", "true");
+			document.body.style.overflow = "auto";
+		}
+	}
+
+	if (policiesBtn) {
+		policiesBtn.addEventListener("click", (e) => {
+			e.preventDefault();
+			openModal();
+		});
+	}
+
+	if (modalClose) {
+		modalClose.addEventListener("click", closeModal);
+	}
+
+	if (modalCloseBtnBtn) {
+		modalCloseBtnBtn.addEventListener("click", closeModal);
+	}
+
+	if (modalOverlay) {
+		modalOverlay.addEventListener("click", closeModal);
+	}
+
+	if (modalAccept) {
+		modalAccept.addEventListener("click", () => {
+			// Guardar aceptación de políticas
+			const email = document.getElementById("email");
+			if (email && email.value) {
+				localStorage.setItem("policies-accepted", JSON.stringify({
+					email: email.value,
+					acceptedAt: new Date().toISOString()
+				}));
+			}
+			closeModal();
+		});
+	}
+
+	// Cerrar modal con tecla ESC
+	document.addEventListener("keydown", (e) => {
+		if (e.key === "Escape" && modal && modal.classList.contains("open")) {
+			closeModal();
+		}
+	});
+
 	const form = document.querySelector(".contact-form");
 	if (form) {
 		const submitBtn = form.querySelector('button[type="submit"]');

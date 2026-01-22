@@ -128,21 +128,82 @@
 						<textarea id="message" name="message" rows="4" required></textarea>
 					</div>
 					<button type="submit" class="btn btn-primary" data-en="Send" data-es="Enviar">Send</button>
+				
+			</form>
+		</div>
+	</section>
+	<section>
+		<p class="policies-notice">
+					<span data-en="By sending, you agree to our " data-es="Al enviar, aceptas nuestras "></span>
+					<button type="button" class="policies-btn" id="policies-btn" data-en="Data Policies" data-es="Políticas de Datos">Data Policies</button>
+				</p>
+	</section>
+</main>
 
-				</form>
-			</div>
-		</section>
-	</main>
+<!-- Modal de Políticas de Seguridad -->
+<div id="policies-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+	<div class="modal-overlay" id="modal-overlay"></div>
+	<div class="modal-content">
+		<div class="modal-header">
+			<h2 id="modal-title" data-en="Data Security Policies" data-es="Políticas de Seguridad de Datos">Data Security Policies</h2>
+			<button class="modal-close" id="modal-close" aria-label="Close modal">×</button>
+		</div>
+		<div class="modal-body">
+			<section class="policy-section">
+				<h3 data-en="Administrative Use" data-es="Uso Administrativo">Administrative Use</h3>
+				<p data-en="Your data is used exclusively for administrative purposes, including managing inquiries, improving services, and internal communications." data-es="Tus datos se utilizan exclusivamente para fines administrativos, incluyendo la gestión de consultas, mejora de servicios y comunicaciones internas.">Your data is used exclusively for administrative purposes, including managing inquiries, improving services, and internal communications.</p>
+			</section>
 
-	<footer class="site-footer">
-		<div class="container footer-inner">
-			<p><span data-en="© " data-es="© "></span><span id="year"></span><span
-					data-en=" ArgentIA. All rights reserved." data-es=" ArgentIA. Todos los derechos reservados.">
+			<section class="policy-section">
+				<h3 data-en="No Data Sales" data-es="Sin Venta de Datos">No Data Sales</h3>
+				<p class="highlight" data-en="ArgentIA will NEVER sell, share, or commercialize your personal data under any circumstances." data-es="ArgentIA NUNCA venderá, compartirá ni comercializará tus datos personales bajo ninguna circunstancia."><strong>ArgentIA will NEVER sell, share, or commercialize your personal data under any circumstances.</strong></p>
+				<ul>
+					<li data-en="No selling to third parties" data-es="No venta a terceros">No selling to third parties</li>
+					<li data-en="No marketing use without explicit consent" data-es="Sin uso de marketing sin consentimiento explícito">No marketing use without explicit consent</li>
+					<li data-en="No sharing with external companies" data-es="No compartir con empresas externas">No sharing with external companies</li>
+					<li data-en="Strict confidentiality with all providers" data-es="Confidencialidad estricta con todos los proveedores">Strict confidentiality with all providers</li>
+				</ul>
+			</section>
+
+			<section class="policy-section">
+				<h3 data-en="Data Security" data-es="Seguridad de Datos">Data Security</h3>
+				<p data-en="We implement robust security measures to protect your information:" data-es="Implementamos medidas de seguridad robustas para proteger tu información:">We implement robust security measures to protect your information:</p>
+				<ul>
+					<li data-en="Encryption in transit (HTTPS/TLS)" data-es="Encriptación en tránsito (HTTPS/TLS)">Encryption in transit (HTTPS/TLS)</li>
+					<li data-en="Encrypted data at rest" data-es="Datos encriptados en reposo">Encrypted data at rest</li>
+					<li data-en="Restricted access to sensitive information" data-es="Acceso restringido a información sensible">Restricted access to sensitive information</li>
+					<li data-en="Regular security audits" data-es="Auditorías de seguridad regulares">Regular security audits</li>
+				</ul>
+			</section>
+
+			<section class="policy-section">
+				<h3 data-en="Your Rights" data-es="Tus Derechos">Your Rights</h3>
+				<ul>
+					<li data-en="Right to access your personal data" data-es="Derecho a acceder a tus datos">Right to access your personal data</li>
+					<li data-en="Right to request corrections or updates" data-es="Derecho a solicitar correcciones">Right to request corrections or updates</li>
+					<li data-en="Right to request data deletion" data-es="Derecho a solicitar eliminación de datos">Right to request data deletion</li>
+					<li data-en="Right to withdraw consent at any time" data-es="Derecho a retirar consentimiento">Right to withdraw consent at any time</li>
+				</ul>
+			</section>
+
+			<section class="policy-section">
+				<h3 data-en="Contact" data-es="Contacto">Contact</h3>
+				<p data-en="Questions about our policies? Contact us at: " data-es="¿Preguntas sobre nuestras políticas? Contáctanos en: ">Questions about our policies? Contact us at:</p>
+				<p><strong>privacy@argentina.ai</strong></p>
+			</section>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-primary" id="modal-accept" data-en="Accept" data-es="Aceptar">Accept</button>
+			<button class="btn btn-secondary" id="modal-close-btn" data-en="Close" data-es="Cerrar">Close</button>
+		</div>
+	</div>
+</div>
 					ArgentIA. All rights reserved.</span></p>
 			<nav aria-label="Footer">
 				<a href="#services" data-en="Services" data-es="Servicios">Services</a>
 				<a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
 				<a href="#top" data-en="Back to top" data-es="Volver al inicio">Back to top</a>
+				<a href="#policies" data-en="Policies and Privacy" data-es="Políticas y Privacidad">Políticas y Privacidad</a>
 			</nav>
 		</div>
 	</footer>
