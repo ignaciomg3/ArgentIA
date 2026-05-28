@@ -340,8 +340,8 @@ textarea {
 .site-footer {
 	border-top: 1px solid var(--border);
 	background: rgba(15, 18, 22, 0.75);
-	margin-top: var(--space-8);
-	padding: var(--space-6) 0;
+	margin-top: var(--space-5);
+	padding: var(--space-4) 0;
 }
 
 .footer-inner {
@@ -381,6 +381,71 @@ textarea {
 .site-footer a:hover {
 	color: var(--primary);
 	border-bottom-color: var(--primary);
+}
+
+/* Enhanced footer layout */
+.footer-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--space-3);
+	padding: 6px 0;
+}
+
+.footer-left {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	color: var(--muted);
+	font-size: 12px;
+}
+
+.policies-text {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	color: var(--muted);
+}
+
+.copyright {
+	color: rgba(232,237,242,0.6);
+	font-size: 11px;
+}
+
+.footer-nav {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.footer-nav a {
+	color: var(--muted);
+	font-size: 12px;
+	padding: 4px 6px;
+	border-left: 1px solid rgba(255,255,255,0.03);
+}
+
+.footer-nav a:first-child {
+	border-left: none;
+	padding-left: 0;
+}
+
+.footer-nav a:hover {
+	color: var(--primary);
+}
+
+@media (max-width: 768px) {
+	.footer-inner {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.footer-nav {
+		width: 100%;
+		justify-content: flex-start;
+		gap: 10px;
+		flex-wrap: wrap;
+		margin-top: 6px;
+	}
 }
 
 /* Policies notice styling */
@@ -572,6 +637,49 @@ textarea {
 .policy-section ul li {
 	margin-bottom: var(--space-2);
 	line-height: 1.6;
+}
+
+/* Sophisticated styling for contact inside policies modal */
+.policy-section.policy-contact {
+	font-size: 0.9rem;
+	color: var(--muted);
+	background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+	border-left: 3px solid rgba(74,163,255,0.14);
+	padding: 14px 16px;
+	border-radius: 8px;
+	box-shadow: 0 6px 18px rgba(3,8,15,0.45);
+}
+
+.policy-section.policy-contact h3 {
+	font-size: 14px;
+	color: var(--primary);
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+	margin-bottom: 6px;
+}
+
+.policy-section.policy-contact p {
+	margin: 0 0 8px 0;
+	color: var(--muted);
+	line-height: 1.4;
+}
+
+.policy-contact-email {
+	display: inline-block;
+	background: linear-gradient(90deg, var(--primary), var(--accent));
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-weight: 700;
+	font-size: 0.95rem;
+	padding: 6px 10px;
+	border-radius: 6px;
+	text-decoration: none;
+}
+
+.policy-contact-email:hover {
+	filter: brightness(1.05);
+	opacity: 0.95;
 }
 
 .modal-footer {

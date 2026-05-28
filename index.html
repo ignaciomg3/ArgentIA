@@ -83,10 +83,7 @@
 			</div>
 		</section>
 
-
-
-
-
+ 
 		<section id="contact" class="section section-alt">
 			<div class="container contact-inner">
 				<div class="contact-copy">
@@ -132,12 +129,7 @@
 			</form>
 		</div>
 	</section>
-	<section>
-		<p class="policies-notice">
-					<span data-en="By sending, you agree to our " data-es="Al enviar, aceptas nuestras "></span>
-					<button type="button" class="policies-btn" id="policies-btn" data-en="Data Policies" data-es="Políticas de Datos">Data Policies</button>
-				</p>
-	</section>
+		
 </main>
 
 <!-- Modal de Políticas de Seguridad -->
@@ -186,10 +178,10 @@
 				</ul>
 			</section>
 
-			<section class="policy-section">
+			<section class="policy-section policy-contact">
 				<h3 data-en="Contact" data-es="Contacto">Contact</h3>
 				<p data-en="Questions about our policies? Contact us at: " data-es="¿Preguntas sobre nuestras políticas? Contáctanos en: ">Questions about our policies? Contact us at:</p>
-				<p><strong>privacy@argentina.ai</strong></p>
+				<p><a href="mailto:privacy@argentina.ai" class="policy-contact-email">privacy@argentina.ai</a></p>
 			</section>
 		</div>
 		<div class="modal-footer">
@@ -198,15 +190,23 @@
 		</div>
 	</div>
 </div>
-					ArgentIA. All rights reserved.</span></p>
-			<nav aria-label="Footer">
-				<a href="#services" data-en="Services" data-es="Servicios">Services</a>
-				<a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
-				<a href="#top" data-en="Back to top" data-es="Volver al inicio">Back to top</a>
-				<a href="#policies" data-en="Policies and Privacy" data-es="Políticas y Privacidad">Políticas y Privacidad</a>
-			</nav>
+<footer class="site-footer" role="contentinfo">
+	<div class="container footer-inner">
+		<div class="footer-left">
+			<p class="policies-text"><span data-en="By sending, you agree to our" data-es="Al enviar, aceptas nuestras">By sending, you agree to our</span>
+				<button type="button" class="policies-btn" id="policies-btn" data-en="Data Policies" data-es="Políticas de Datos">Data Policies</button>
+			</p>
+			<p class="copyright">© 2026 ArgentIA. All rights reserved.</p>
 		</div>
-	</footer>
+
+		<nav aria-label="Footer" class="footer-nav">
+			<a href="#services" data-en="Services" data-es="Servicios">Services</a>
+			<a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+			<a href="#top" data-en="Back to top" data-es="Volver al inicio">Back to top</a>
+			<a href="#policies" data-en="Policies and Privacy" data-es="Políticas y Privacidad">Policies and Privacy</a>
+		</nav>
+	</div>
+</footer>
 
 	<script src="app.js"></script>
 </body>
